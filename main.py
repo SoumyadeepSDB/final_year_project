@@ -1,5 +1,12 @@
 import streamlit as st
 
+
+hide_github_icon = """
+#GithubIcon {
+  visibility: hidden;
+}
+"""
+st.markdown(hide_github_icon, unsafe_allow_html=True)
 # Sidebar Menu
 st.sidebar.title("Menu")
 menu = st.sidebar.selectbox("Select Category", ["Reports", "Tools"])
