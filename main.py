@@ -2,9 +2,11 @@ import streamlit as st
 
 
 hide_github_icon = """
-#GithubIcon {
-  visibility: hidden;
+<style>
+.block-container div:nth-child(2) > div:nth-child(3) {
+  display: none;
 }
+</style>
 """
 st.markdown(hide_github_icon, unsafe_allow_html=True)
 # Sidebar Menu
